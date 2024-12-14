@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+.dtitle {
+    color: white;
+    margin-left: 30px;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.addn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+
+.addin {
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: rgb(87, 87, 87);
+    color: #f7f7f7;
+    border-radius: 12px;
+    width: 480px;
+    height: 35px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.addi {
+    color: white;
+    background-color: rgb(255, 196, 0);
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بتوزيع العناصر في صفوف متعددة */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* مسافة بين العناصر */
+}
+
+.note {
+    background-color: rgb(44, 44, 44);
+    color: rgb(200, 200, 200);
+    width: 170px;
+    height: 200px;
+    border-radius: 12px;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 5px 10px rgba(28, 28, 28, 0.3);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow-wrap: break-word;
+}
+
+.note:hover {
+    box-shadow: 1px 5px 15px rgba(28, 28, 28, 0.6);
+}
+
+.noteI {
+    margin-bottom: 10px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.noteI h3 {
+    font-size: .845rem;
+}
+
+.noteI h2 {
+    color: white;
+}
+
+.message h1 {
+    color: rgb(87, 87, 87);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.addan h1 {
+    color: rgb(153, 151, 151);
+    cursor: pointer;
+}
+
+.message a {
+    text-decoration: none;
+}
+
+/* === إضافة استعلامات الوسائط لتحسين التصميم === */
+
+/* الهواتف الذكية (عرض أقل من 480px) */
+@media (max-width: 480px) {
+    .addin {
+        width: 90%; /* جعل الحقل يأخذ العرض الكامل تقريبًا */
+        font-size: 14px;
+    }
+
+    .notes {
+        gap: 5px; /* تقليل المسافات بين العناصر */
+    }
+
+    .note {
+        width: 140px; /* تصغير حجم العناصر */
+        height: 180px;
+        padding: 15px;
+    }
+
+    .noteI {
+        height: 130px; /* تصغير الارتفاع */
+    }
+}
+
+/* الأجهزة اللوحية (عرض أقل من 768px) */
+@media (max-width: 768px) {
+    .addin {
+        width: 70%; /* عرض الحقل أقل */
+        font-size: 14px;
+    }
+
+    .notes {
+        gap: 10px;
+    }
+
+    .note {
+        width: 150px;
+        height: 190px;
+    }
+
+    .noteI {
+        height: 140px;
+    }
+}
+
+/* الشاشات الكبيرة (عرض أكثر من 1200px) */
+@media (min-width: 1200px) {
+    section {
+        max-width: 90%; /* لا تترك مساحة كبيرة جدًا على الشاشات العريضة */
+    }
+
+    .note {
+        width: 200px; /* زيادة حجم العناصر */
+        height: 220px;
+    }
+
+    .noteI {
+        height: 180px;
+    }
+}

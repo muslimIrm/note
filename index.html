@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="dtitle">Notes</h1>
+        </div>
+    </header>
+    <center>
+        <section style="height: 100%;">
+            <div class="addn">
+                <input id="input" class="addin" type="text" placeholder="Enter note's title...">
+                <div title="add" class="addi" onclick="addButtonFunction()">
+                    <i class="fas fa-plus icon"></i>
+                </div>
+            </div>
+            <div id="message" class="message">
+                <h1>No notes have been added yet.</h1>
+                <a onclick="smallButtonToFocus()" id="buttonFocus" class="addan" href="#"><h1>Click here</h1></a>
+            </div>
+            <div id="notes" class="notes">
+                <div class="note" onclick="window.location.href = 'writenote.html'">
+                    <div class="noteI">
+                        <h2>Title</h2>
+                        <h3>Description</h3>
+                    </div>
+                    <div class="noteD">
+                        <h4>yyyy/mm/dd</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

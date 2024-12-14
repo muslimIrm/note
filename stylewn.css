@@ -1,0 +1,113 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    border-bottom: #ccc solid 2px;
+}
+
+.dtitle {
+    color: white;
+    margin-left: 30px;
+}
+
+.in input {
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: #ccc solid 1px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 25px;
+    font-family: 'Lora', serif;
+}
+
+.in h4 {
+    color: rgb(155, 155, 155);
+    padding-left: 25px;
+}
+
+.des {
+    min-height: 150px;
+}
+
+.des textarea {
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    width: 100%; 
+    min-height: 400px;
+    padding: 20px;
+    border: none; 
+    overflow: auto; 
+    resize: none;
+    outline: none; 
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* شاشات الهواتف */
+@media (max-width: 600px) {
+    .dtitle {
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .in input {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .des textarea {
+        font-size: 1rem;
+        padding: 10px;
+        min-height: 300px;
+    }
+}
+
+/* الأجهزة اللوحية */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .dtitle {
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+
+    .in input {
+        font-size: 1.2rem;
+        padding: 18px;
+    }
+
+    .des textarea {
+        font-size: 1.1rem;
+        padding: 15px;
+        min-height: 500px;
+    }
+}
+
+/* شاشات كبيرة (أكثر من 1200px) */
+@media (min-width: 1200px) {
+    .des textarea {
+        min-height: 1000px;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .in input {
+        font-size: 1.5rem;
+    }
+}
